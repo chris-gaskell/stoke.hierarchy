@@ -2,7 +2,7 @@ library(highcharter)
 library(tidyverse)
 
 height = 120
-width = 400
+width = 350
 width.2 = 250
 
 CN = "Consultant Neuropsychologist"
@@ -49,19 +49,19 @@ highchart() %>%
       list(id = 'Major Trauma',      title = NULL,     name = 'Major Trauma',               description = NULL,                                                 color = "silver",     layout = 'hanging',    height = height,   width = width,         image = NULL,     offset = '-20%',     borderColor = 'black'),
       list(id = 'ARTU',              title = NULL,     name = 'ARTU',                       description = NULL,                                                 color = "silver",     layout = 'hanging',    height = height,   width = width,         image = NULL,     offset = '00%',     borderColor = 'black'),
 
-      list(id = 'Gemma M',    title = CN,    name = 'Dr. Gemma Mercer',                    description = "Gemma.Mercer@<br>uhnm.nhs.uk<br>0.8WTE",              color = "lightblue",                        height = height,   width = width,   borderColor = 'black',    image = "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png", offset = '50%'),
+      list(id = 'Gemma M',    title = CN,    name = 'Dr. Gemma Mercer',                    description = "Gemma.Mercer@<br>uhnm.nhs.uk<br>0.8WTE",              color = "lightblue",                        height = height,   width = width,   borderColor = 'black',    image = "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/wt.bg/gemma_m.png?raw=true", offset = '50%'),
       list(id = 'Jo Talbot',  title = CP,    name = 'Dr. Jo Talbot',                       description = "Jo.Talbot@<br>combined.nhs.uk<br>1.0WTE",             color = "orange",                           height = height,   width = width,   borderColor = 'black',    image = "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"),
       list(id = 'Assistant',  title = AP,    name = 'Vacant',                              description = "Vacant@<br>combined.nhs.uk<br>1.0WTE",                color = "orange",                           height = height,   width = width,   borderColor = 'black',    image = "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"),
       list(id = 'Laura',      title = AP,    name = 'Laura Das',                           description = "laura.das@<br>combined.nhs.uk<br>0.4WTE",             color = "lightblue",                        height = height,   width = width,   borderColor = 'black',    image = "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png",  offset = '-313%'),
-      list(id = 'Melissa',    title = CP,    name = 'Dr. Melissa Sinha',  layout = "normal",                 description = "Melissa.Sinha@<br>combined.nhs.uk<br>1.0WTE",         color = "lightblue",                        height = height,   width = width,   borderColor = 'black',    image = "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"),
+      list(id = 'Melissa',    title = CP,    name = 'Dr. Melissa Sinha',                   description = "Melissa.Sinha@<br>combined.nhs.uk<br>1.0WTE",         color = "lightblue",                        height = height,   width = width,   borderColor = 'black',    image = "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/wt.bg/melissa.png?raw=true",  layout = "normal"),
       list(id = 'Aimee',      title = CP,    name = 'Dr. Aimee Titchen ',                  description = "Aimee.Titchen@<br>combined.nhs.uk<br>1.0WTE",         color = "orange",                           height = height,   width = width,   borderColor = 'black',    image = "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"),
-      list(id = 'Olivia',     title = AP,    name = 'Olivia Taylor',                       description = "olivia.taylor@<br>uhnm.nhs.uk<br>1.0WTE",             color = "lightblue",                        height = height,   width = width,   borderColor = 'black',    image = "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png",  offset = '-125%'),
+      list(id = 'Olivia',     title = AP,    name = 'Olivia Taylor',                       description = "olivia.taylor@<br>uhnm.nhs.uk<br>1.0WTE",             color = "lightblue",                        height = height,   width = width,   borderColor = 'black',    image = "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/wt.bg/olivia.png?raw=true",  offset = '-125%'),
       list(id = 'Amy',        title = AP,    name = 'Amy Coop',                            description = "amy.coop@<br>combined.nhs.uk<br>1.0WTE",              color = "orange",                           height = height,   width = width,   borderColor = 'black',    image = "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png")#,
 
     ),
     colorByPoint = TRUE,
     color = '#007ad0',
-    dataLabels = list(color = 'white'),
+    dataLabels = list(color = 'black'),
     borderColor = 'white',
     nodeWidth = 50
   ) %>%

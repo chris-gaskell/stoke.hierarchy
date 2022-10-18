@@ -10,19 +10,7 @@ CN = "Consultant Neuropsychologist"
 AP = "Assistant Psychologist"
 TP = "Trainee Psychologist"
 CP = "Clinial Psychologist"
-
-import_all_imgs <-
-  function(path, pattern = ".jpg") {
-    path_list <- list.files(path = path, pattern = pattern, full.names = T)
-    all_images <- lapply(path_list, image_read)
-    name_list <- list.files(path = path, pattern = pattern)
-    name_list <- name_list %>% str_remove(".jpg")
-    names(all_images) <- name_list
-
-    return(all_images)
-  }
-
-images <- import_all_imgs(path = "images/no.bg", pattern = "png")
+image.ph = "https://eitrawmaterials.eu/wp-content/uploads/2016/09/person-icon.png"
 
 highchart() %>%
   hc_chart(type = 'organization', inverted = TRUE) %>%
@@ -47,11 +35,11 @@ highchart() %>%
     nodes = list(
       list(id = 'Top',               title = '<br>',     name = 'Stoke Neuro Community & Long Covid Services',     description = NULL,        layout = 'hanging',                    color = "silver",     width = width,     borderColor = 'black'),
 
-      list(id = 'Lorraine',   title = CN,    name = 'Dr. Lorraine King',    description = "LORRAINE.KING@<br>combined.nhs.uk<br>0.6WTE",         color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image =  "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/no.bg/anna.png?raw=true"),
-      list(id = 'Anna',       title = CP,    name = 'Dr. Anna Isherwood',   description = "Anna.Isherwood@<br>combined.nhs.uk<br>0.6WTE",        color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image =  "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/no.bg/anna.png?raw=true"),
-      list(id = 'James',      title = CP,    name = 'Dr. James Reilly',     description = "JAMES.REILLY@<br>combined.nhs.uk<br>1.0WTE",          color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image =  "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/no.bg/anna.png?raw=true"),
-      list(id = 'Emily',      title = AP,    name = 'Emily Bunn',           description = "Emily.Bunn@<br>combined.nhs.uk<br>1.0WTE",            color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image =  "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/no.bg/anna.png?raw=true"),
-      list(id = 'Laura',      title = AP,    name = 'Laura Das',            description = "laura.das@<br>combined.nhs.uk<br>0.5WTE",             color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image = images$anna.png)#,
+      list(id = 'Lorraine',   title = CN,    name = 'Dr. Lorraine King',    description = "LORRAINE.KING@<br>combined.nhs.uk<br>0.6WTE",         color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image =  "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/wt.bg/lorraine.png?raw=true"),
+      list(id = 'Anna',       title = CP,    name = 'Dr. Anna Isherwood',   description = "Anna.Isherwood@<br>combined.nhs.uk<br>0.6WTE",        color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image =  "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/wt.bg/anna.png?raw=true"),
+      list(id = 'James',      title = CP,    name = 'Dr. James Reilly',     description = "JAMES.REILLY@<br>combined.nhs.uk<br>1.0WTE",          color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image =  "https://github.com/chris-gaskell/stoke.hierarchy/blob/main/images/wt.bg/james.png?raw=true"),
+      list(id = 'Emily',      title = AP,    name = 'Emily Bunn',           description = "Emily.Bunn@<br>combined.nhs.uk<br>1.0WTE",            color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image =  image.ph),
+      list(id = 'Laura',      title = AP,    name = 'Laura Das',            description = "laura.das@<br>combined.nhs.uk<br>0.5WTE",             color = "lightblue",    height = height,   width = width,   borderColor = 'black',    image =  image.ph)#,
 
 
 
